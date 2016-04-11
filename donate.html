@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCCFF | Home</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="toprunner">
+		<a href="http://www.twitter.com/scfathers" target="_blank"><img src="img/twitter.png" alt="Twitter Social Icon"></a>
+		<a href="http://www.facebook.com/SCCFF/" target="_blank">f</a>
+		<a href="#" title="Contact Us">Contact Us</a>
+		<div id="search_box">
+			<script>
+			  (function() {
+			    var cx = '011133200709068629422:3azv7h_3sa4';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//cse.google.com/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<header id="header">
+		<a href="index.html" id="logo"><img src="img/logo2.png" alt="SCCFF Logo" ></a>
+		<a href="index.html"><h1>South Carolina Center for Fathers &amp; Families</h1></a>
+		<nav>
+			<ul>
+				<li><a href="about.html" title="About">About</a></li>
+				<li><a href="programs.html" title="Programs">Programs</a></li>
+				<li><a href="#" title="Resources">Resources</a></li>
+				<li><a href="#" title="News">News</a></li>
+				<li><a href="#" title="Contributors">Contributors</a></li>
+			</ul>
+		</nav>
+	</header><!-- /header -->
+	
+	<div class="wrapper" id="wrapper2">
+		<div class="donate">
+			<a href="donate.html" title="Donate"><button type="donate">Thank you for your donation!</button></a>
+			<img src="img/flair1.png" alt="" id="flair1">
+		</div>
+	</div>
+	<div class="main_content">
+		<form action="" method="post" accept-charset="utf-8" id="donate_form">
+			<h1>Donate Today to Support Fathers</h1>
+			<fieldset>
+				<h2>Donation Information</h2>
+				<label for="amount">Amount:</label>
+				<input type="number" name="amount" id="amount">
+
+				<label for="designation">Designation:</label>
+
+				<select name="designation" id="designation">
+					<option value="00">Please Select One</option>
+					<option value="01">A Father's Place</option>
+					<option value="02">Father to Father Project</option>
+					<option value="03">Lancaster Fatherhood Project</option>
+					<option value="04">Man 2 Man Fatherhood Initiative</option>
+					<option value="05">Midlands Fatherhood Coalition</option>
+					<option value="06">Upstate Fatherhood Coalition</option>
+					<option value="07">Responsible Fatherhood</option>
+					<option value="08">Jobs Not Jail</option>
+					<option value="09">Access to Healthcare</option>
+					<option value="10">Advocacy to Healthcare</option>
+					<option value="11">Capacity Building &amp; Tech Assistance</option>
+					<option value="12">Area of Greatest Need</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<h2>Additional Information</h2>
+				<p>Type of gift:</p>
+				<div>
+					<input type="radio" name="radio" id="one_time_gift" value="r1">
+					<label for="one_time_gift">One-time gift</label>
+				</div>
+				<div>
+					<input type="radio" name="radio" id="pledge_gift" value="r2">
+					<label for="pledge_gift">Pledge (installments)</label>
+				</div>
+				<div>
+					<input type="checkbox" name="corporate_donation" value="corporate_donation">
+					<label for="checkbox">Check if Corporate donation</label>
+				</div>
+				<div>
+					<input type="checkbox" name="anonymouse_donation" value="anonymous_donation">
+					<label for="checkbox">Check if Anonymous</label>
+				</div>
+				<div>
+					<label for="text">Comments:</label>
+					<textarea name="text" id="comment_box" cols="34" rows="5"></textarea>
+				</div>
+				<div>			
+					<label for="marketing_source">What brought you here to give today?</label>
+					<select name="marketing_source" id="marketing_source">
+						<option value="00">Select One</option>
+						<option value="01">Direct Mailer</option>
+						<option value="02">Social Media</option>
+						<option value="03">Other</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<h2>Tribute Information</h2>
+				<label for="firstname">First name:</label>
+				<input type="text" name="firstname" id="firstname" value>
+				<label for="lastname">Last name:</label>
+				<input type="text" name="lastname" id="lastname" value>
+				<p>Type:</p>
+				<div>
+					<input type="radio" name="radio2" id="honor" value="r1">
+					<label for="honor">In Honor Of</label>
+				</div>
+				<div>
+					<input type="radio" name="radio2" id="memory" value="r2">
+					<label for="memory">In Memory Of</label>
+				</div>
+				<label for="description">Description:</label>
+				<input type="text" name="description" id="description">
+				<input type="checkbox" name="mailer" value="checkbox3">
+				<label for="checkbox">Mail a letter on my behalf</label>
+			</fieldset>
+			<fieldset class="mailer">
+					<label for="recipient_name">Recipient name:</label>
+					<input type="text" name="recipient_name" id="recipient_name">
+					<label for="address">Address:</label>
+	    			<input type="text" id="address">
+			    	<label for="city">City:</label>
+	    			<input type="text" id="city">
+			    	<label for="state">State:</label>
+	                <input type="text" id="state">
+			    	<label for="zip">Zip:</label>
+	    			<input type="number" id="zip">
+	    			<input type="submit" value="Submit" id="mailer_submit">
+	    			<a href="#" title="" id="close_mailer">close</a>
+				</fieldset>
+			<fieldset>
+				<h2>Billing Information</h2>
+				<label for="title">Title:</label>
+				<input type="text" name="title" id="title">
+				<label for="firstname">First name:</label>
+				<input type="text" name="firstname" id="firstname">
+				<label for="lastname">Last name:</label>
+				<input type="text" name="lastname" id="lastname">
+				<label for="country">Country:</label>
+				<input type="text" id="country">
+				<label for="address">Address:</label>
+				<input type="text" id="address">
+		    	<label for="city">City:</label>
+				<input type="text" id="city">
+		    	<label for="state">State:</label>
+	            <input type="text" id="state">
+		    	<label for="zip">Zip:</label>
+				<input type="number" id="zip">
+				<label for="phone">Phone:</label>
+				<input type="text" id="phone">
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+			</fieldset>
+			<fieldset>
+				<h2>Payment Information</h2>
+				<label for="card_holder">Name on card:</label>
+				<input type="text" name="card_holder" id="card_holder" value>
+				<label for="card_number">Card Number:</label>
+				<input type="number" name="card_number" id="card_number" value> 
+				<label for="expiration">Expiration:</label>
+				<input type="text" name="expiration" id="expiration" value> 
+				<label for="code">Security Code:</label>
+				<input type="text" name="code" id="code" value>  
+			</fieldset>
+			<input type="submit" value="- Submit Donation -" id="donate_submit">
+		</form>	
+		<div class="aside">
+			<p>Or ...</p> 
+			<p>Mail your donation to:</p> 
+			<p class="bold">SC Center for Fathers and Families 2711 Middleburg Drive, Suite 111 Columbia, SC 29204</p>
+			<p>We also welcome donations of stock and the opportunity to work with you on a planned gift.</p>
+			<p>Please contact Jessica Wilson, Director of Finance and Operations, at <span class="bold">803-227-8800 ext 202</span> to arrange a meeting with you, a financial adviser and Center leadership.</p>
+			<p>Visit <a href="#">Impact</a> and read the success stories to see the difference other donors have made.</p>
+			<p>Also visit <a href="http://www.scfathersandfamilies.com/funders_partners__policy-makers/">Contributors</a> to see who has also invested and is changing lives along with you.</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="sidebar">
+			<div class="self_help">
+				<button type="">Pro Se Modification</button>
+				<button type="Expungement Guide">Expungement Guide</button>
+				<div class="clear"></div>
+			</div>
+			<div class="by_the_numbers">
+				<div class="btn"><h2>By the Numbers</h2></div>
+				<div class="facts">
+				<p>In 2014, 503 men gained employment with help from our programs.</p></div>
+			</div>
+			<div class="newsletter">
+				<a href="#" title="Sign Up"><button type"sign_up">Sign up for our Newsletter</button></a>
+				<a href="#" title=""><img src="img/flair2.png" alt="" id="flair2"></a>
+			</div>
+		</div>
+		<div class="clear"></div>	
+	</div><!-- /wrapper -->
+	<footer>
+		<p>SCCFF, A Ministry of the Sisters of Charity of St. Augustine</p>
+		<p>&copy 2014 The South Carolina Center for Fathers and Families</p>
+		<ul>
+			<li>2711 Middleburg Drive, Suite 111 Columbia, SC 29204</li>
+			<li>803.227.8800</li>
+		</ul>
+		<div class="social_media">
+			<p>Follow us</p>
+			<a href="http://www.facebook.com/SCCFF/" target="_blank">f</a>
+			<a href="http://www.twitter.com/scfathers" target="_blank"><img src="img/twitter.png" alt="Twitter Social Icon"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#" title="FAQs">FAQs</a></li>
+				<li><a href="#" title="Contact Us">Contact Us</a></li>
+				<li><a href="#" title="Site Map">Site Map</a></li>
+				<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
