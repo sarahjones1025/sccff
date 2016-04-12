@@ -14,8 +14,10 @@ body{
 }
 
 #search_box {
-    width: 53%;
-    margin-left: 15px;
+    width: 54%;
+    float: right;
+    /*margin-left: 15px;*/
+    margin-top: 2px;
 }
 
 #search_box input{
@@ -34,20 +36,21 @@ body{
 	height: 28px;
 }
 
-.toprunner a, #search_box{
-	float: left;
+.contact_section, #search_box{
+	float: right;
 }
 
 .toprunner a{
-	color: #808080;
+	float: left;
+	color: #ccc;
 	text-decoration: none;
 	padding-right: 5px;
 	margin-top: 5px;
 }
 
-.toprunner a:first-child img{
+.toprunner img{
 	height: 15px;
-	padding-right: 10px;
+	padding: 5px;
 	/*padding: 5px;*/
 }
 
@@ -59,14 +62,14 @@ body{
 
 .toprunner a:nth-child(3){
 	font-size: .8em;
-	border-left: solid 1px #808080;
-	padding-left: 10px;
-	margin-left: 10px;
+    border-left: solid 2px #ccc;
+    padding: 5px 5px 5px 10px;
+    margin-left: 5px;
 }
 /*************HEADER*************/
 #header{
 	background-color: #fff;
-	border-bottom: solid 1px #808080;
+	/*border-bottom: solid 1px #808080;*/
 	position: relative;
 
 }
@@ -221,16 +224,18 @@ body{
 .self_help button{
 	background-color: #ccc;
 	color: #fff;
-	width: 47%;
-	float: left;
+	width: 100%;
+	display: inline-block;
 	border: none;
 	border-radius: 5px;
 	padding: 15px;
-	font-size: .8em;
+	font-size: 1em;
+
 }
 
 .self_help button:first-child{
 	margin-right: 5%;
+	margin-bottom: 10px;
 }
 
 /*************WRAPPER*************/
@@ -854,6 +859,10 @@ footer nav li a:active{
 
 @media screen and (min-width: 420px){
 	
+	.contact_section{
+		margin-right: 20px;
+	}
+
 	.wrapper{
 		padding: 20px 40px;
 	}
@@ -885,13 +894,17 @@ footer nav li a:active{
 		padding: 20px 100px;
 	}
 
-	.toprunner{
-		text-align: right;
+	/*.toprunner{
+		padding: 0;
+	}*/
+
+	.toprunner a{
+		vertical-align: center;
 	}
 
-	#search_box{
-		width: 255px;
-		padding: 0;
+	#search_box {
+	    width: 250px;
+	/*    padding: 5px;*/
 	}
 
 	#header{
