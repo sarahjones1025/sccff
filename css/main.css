@@ -680,6 +680,7 @@ input{
 	height: 45px;
 	width: 100%;
 	margin-bottom: 20px;
+	text-indent: 15px;
 }
 
 #designation{
@@ -687,10 +688,23 @@ input{
 	background-color: #fff;
 	width: 100%;
 	border-radius: 0;
-	height: 45px;
+	height: 55px;
 	border: solid 1px #ccc;
 	color: #bbb;
 	margin-bottom: 20px;
+	text-indent: 15px;
+}
+
+#title{
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0;
+    height: 55px;
+    border: solid 1px #ccc;
+    color: #bbb;
+    margin-bottom: 20px;
+    text-indent: 15px;
 }
 
 #one_time_gift, #pledge_gift, #honor, #memory{
@@ -719,7 +733,6 @@ label[for="memory"]{
 }
 
 input[type="checkbox"]{
-	-webkit-appearance: none;
 	height: 20px;
 	width: 20px;
 	border: solid 1px #ccc;
@@ -744,6 +757,7 @@ label[for="checkbox"]{
 	border: solid 1px #ccc;
 	color: #bbb;
 	margin-bottom: 20px;
+	text-indent: 15px;
 }
 
 #donate_submit {
@@ -757,6 +771,7 @@ label[for="checkbox"]{
 }
 
 .mailer{
+	display: none;
 	background-color: #ccc;
 	padding: 20px;
 }
@@ -771,6 +786,10 @@ label[for="checkbox"]{
     border: none;
     border-radius: 5px;
 
+}
+
+.show{
+	display: block;
 }
 
 #close_mailer{
@@ -889,8 +908,10 @@ footer nav li a:active{
 	}
 
 	#donate_submit{
-		max-width: 80%;
-		margin: 0 10%;
+		width: 80%;
+	    text-align: center;
+	    margin: 0 auto;
+	    max-width: 400px;
 	}
 
 }
@@ -1094,7 +1115,33 @@ footer nav li a:active{
 	.box2{
 		margin-bottom: 30px;
 	}
+	
+	.desktop_map{
+		display: block;
+	    float: left;
+	    width: 44%;
+	    padding: 3%;
+	    background-color: #fff;
+	}
 
+	.desktop_map h1{
+		margin-top: 0;
+	}
+	
+
+	.desktop_map img{
+		width: 100%;
+	}
+	
+	.map_content{
+		background-color: #fff;
+	}
+	
+	.program_locator{
+		width: 50%;
+		float: right;
+		margin-top: 50px;
+	}
 }
 
 
