@@ -9,6 +9,9 @@ trigger.on( "click", function( e ){
     $( selector ).fadeIn( 500 );
 
     // console.log( $( selector ).height() );
+    if ( $( window ).height() < 600 ) {
+		$( document.body ).scrollTop( $( selector ).offset().top - 130 );
+    }
 
     e.preventDefault();
 } );
@@ -29,13 +32,14 @@ $( ".trigger_2" ).trigger( "click" );
 // to view the contents of each section.
 
 
-var mailer 		= document.getElementsByClassName( "mailer" );
+var mailer 		= document.querySelector( ".mailer" );
 var openMailer 	= document.getElementById( "open_mailer" );
 var closeMailer = document.getElementById( "close_mailer" );
 
 var openUp = function openUp( e ){
+	mailer.classList.toggle('show')
 
-	mailer.className += ( "show" );
+	// mailer.className += ( "show" );
 	console.log( "working" );
 
 }
@@ -43,7 +47,7 @@ var openUp = function openUp( e ){
 var closeDown = function closeDown( e ){
 
 	mailer.classList.remove("show");
-	
+	openMailer.checked = false;
 	e.preventDefault();
 }
 
