@@ -11,9 +11,6 @@
 </head>
 <body>
 	<div class="toprunner">
-		<a href="http://www.twitter.com/scfathers" target="_blank"><img src="img/twitter.png" alt="Twitter Social Icon"></a>
-		<a href="http://www.facebook.com/SCCFF/" target="_blank">f</a>
-		<a href="#" title="Contact Us">Contact Us</a>
 		<div id="search_box">
 			<script>
 			  (function() {
@@ -29,12 +26,18 @@
 			</script>
 			<gcse:search></gcse:search>
 		</div>
+		<div class="contact_section">
+			<a href="http://www.twitter.com/scfathers" target="_blank"><img src="img/twitter.png" alt="Twitter Social Icon"></a>
+			<a href="http://www.facebook.com/SCCFF/" target="_blank"><img src="img/facebook.png" alt="Facebook Social Icon"></a>
+			<a href="#" title="Contact Us">Contact Us</a>
+		</div>
+		
 		<div class="clear"></div>
 	</div>
 	
 	<header id="header">
 		<a href="index.html" id="logo"><img src="img/logo2.png" alt="SCCFF Logo" ></a>
-		<a href="index.html"><h1>South Carolina Center for Fathers &amp; Families</h1></a>
+		<a href="index.html"><h1>South Carolina Center for Fathers & Families</h1></a>
 		<nav>
 			<ul>
 				<li><a href="about.html" title="About">About</a></li>
@@ -58,7 +61,7 @@
 			<fieldset>
 				<h2>Donation Information</h2>
 				<label for="amount">Amount:</label>
-				<input type="number" name="amount" id="amount">
+				<input type="number" name="amount" id="amount" placeholder="$">
 
 				<label for="designation">Designation:</label>
 
@@ -114,9 +117,9 @@
 			<fieldset>
 				<h2>Tribute Information</h2>
 				<label for="firstname">First name:</label>
-				<input type="text" name="firstname" id="firstname" value>
+				<input type="text" name="firstname" id="firstname">
 				<label for="lastname">Last name:</label>
-				<input type="text" name="lastname" id="lastname" value>
+				<input type="text" name="lastname" id="lastname">
 				<p>Type:</p>
 				<div>
 					<input type="radio" name="radio2" id="honor" value="r1">
@@ -127,8 +130,8 @@
 					<label for="memory">In Memory Of</label>
 				</div>
 				<label for="description">Description:</label>
-				<input type="text" name="description" id="description">
-				<input type="checkbox" name="mailer" value="checkbox3">
+				<input type="text" name="description" id="description" placeholder="Tell us about your tribute">
+				<input type="checkbox" name="mailer" value="checkbox3" id="open_mailer">
 				<label for="checkbox">Mail a letter on my behalf</label>
 			</fieldset>
 			<fieldset class="mailer">
@@ -143,12 +146,17 @@
 			    	<label for="zip">Zip:</label>
 	    			<input type="number" id="zip">
 	    			<input type="submit" value="Submit" id="mailer_submit">
-	    			<a href="#" title="" id="close_mailer">close</a>
+	    			<a href="#" title="" id="close_mailer">cancel</a>
 				</fieldset>
 			<fieldset>
 				<h2>Billing Information</h2>
 				<label for="title">Title:</label>
-				<input type="text" name="title" id="title">
+				<select name="title" id="title">
+					<option value="00">Please Select One</option>
+					<option value="01">Mr.</option>
+					<option value="02">Mrs.</option>
+					<option value="03">Ms.</option>
+				</select>	
 				<label for="firstname">First name:</label>
 				<input type="text" name="firstname" id="firstname">
 				<label for="lastname">Last name:</label>
@@ -201,7 +209,7 @@
 			<div class="by_the_numbers">
 				<div class="btn"><h2>By the Numbers</h2></div>
 				<div class="facts">
-				<p>In 2014, 503 men gained employment with help from our programs.</p></div>
+				<p>47% of the fathers in our programs participate voluntarily.</p></div>
 			</div>
 			<div class="newsletter">
 				<a href="#" title="Sign Up"><button type"sign_up">Sign up for our Newsletter</button></a>
@@ -219,8 +227,8 @@
 		</ul>
 		<div class="social_media">
 			<p>Follow us</p>
-			<a href="http://www.facebook.com/SCCFF/" target="_blank">f</a>
 			<a href="http://www.twitter.com/scfathers" target="_blank"><img src="img/twitter.png" alt="Twitter Social Icon"></a>
+		<a href="http://www.facebook.com/SCCFF/" target="_blank"><img src="img/facebook.png" alt="Facebook Social Icon"></a>
 		</div>
 		<nav>
 			<ul>

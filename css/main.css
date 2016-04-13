@@ -14,8 +14,10 @@ body{
 }
 
 #search_box {
-    width: 53%;
-    margin-left: 15px;
+    width: 54%;
+    float: right;
+    /*margin-left: 15px;*/
+    margin-top: 2px;
 }
 
 #search_box input{
@@ -34,20 +36,21 @@ body{
 	height: 28px;
 }
 
-.toprunner a, #search_box{
-	float: left;
+.contact_section, #search_box{
+	float: right;
 }
 
 .toprunner a{
-	color: #808080;
+	float: left;
+	color: #ccc;
 	text-decoration: none;
 	padding-right: 5px;
 	margin-top: 5px;
 }
 
-.toprunner a:first-child img{
+.toprunner img{
 	height: 15px;
-	padding-right: 10px;
+	padding: 5px;
 	/*padding: 5px;*/
 }
 
@@ -59,14 +62,14 @@ body{
 
 .toprunner a:nth-child(3){
 	font-size: .8em;
-	border-left: solid 1px #808080;
-	padding-left: 10px;
-	margin-left: 10px;
+    border-left: solid 2px #ccc;
+    padding: 5px 5px 5px 10px;
+    margin-left: 5px;
 }
 /*************HEADER*************/
 #header{
 	background-color: #fff;
-	border-bottom: solid 1px #808080;
+	/*border-bottom: solid 1px #808080;*/
 	position: relative;
 
 }
@@ -123,6 +126,9 @@ body{
 	color: #00d9c3;
 }
 
+nav ul{
+	margin-bottom: 0;
+}
 
 /*Donate Button*/
 .donate{
@@ -221,16 +227,18 @@ body{
 .self_help button{
 	background-color: #ccc;
 	color: #fff;
-	width: 47%;
-	float: left;
+	width: 100%;
+	display: inline-block;
 	border: none;
 	border-radius: 5px;
 	padding: 15px;
-	font-size: .8em;
+	font-size: 1em;
+
 }
 
 .self_help button:first-child{
 	margin-right: 5%;
+	margin-bottom: 10px;
 }
 
 /*************WRAPPER*************/
@@ -479,7 +487,7 @@ iframe{
 
 .about_us h1 {
     font-size: 1.6em;
-    border-bottom: solid 1px #444;
+    border-bottom: solid 2px #ccc;
     padding: 5%;
     font-weight: normal;
 }
@@ -489,6 +497,10 @@ iframe{
 	padding: 2% 5%;
 	line-height: 1.5;
 	font-family: Georgia, serif;
+}
+
+.about_us p:nth-child(3){
+	font-weight: bold;
 }
 
 .about_us a{
@@ -511,7 +523,7 @@ iframe{
 
 .charity_info ul{
 	margin: 0;
-	padding: 20px;
+	padding: 20px 5%;
 }
 
 .charity_info li{
@@ -668,6 +680,7 @@ input{
 	height: 45px;
 	width: 100%;
 	margin-bottom: 20px;
+	text-indent: 15px;
 }
 
 #designation{
@@ -675,10 +688,23 @@ input{
 	background-color: #fff;
 	width: 100%;
 	border-radius: 0;
-	height: 45px;
+	height: 55px;
 	border: solid 1px #ccc;
 	color: #bbb;
 	margin-bottom: 20px;
+	text-indent: 15px;
+}
+
+#title{
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0;
+    height: 55px;
+    border: solid 1px #ccc;
+    color: #bbb;
+    margin-bottom: 20px;
+    text-indent: 15px;
 }
 
 #one_time_gift, #pledge_gift, #honor, #memory{
@@ -707,7 +733,6 @@ label[for="memory"]{
 }
 
 input[type="checkbox"]{
-	-webkit-appearance: none;
 	height: 20px;
 	width: 20px;
 	border: solid 1px #ccc;
@@ -732,6 +757,7 @@ label[for="checkbox"]{
 	border: solid 1px #ccc;
 	color: #bbb;
 	margin-bottom: 20px;
+	text-indent: 15px;
 }
 
 #donate_submit {
@@ -745,6 +771,7 @@ label[for="checkbox"]{
 }
 
 .mailer{
+	display: none;
 	background-color: #ccc;
 	padding: 20px;
 }
@@ -759,6 +786,10 @@ label[for="checkbox"]{
     border: none;
     border-radius: 5px;
 
+}
+
+.show{
+	display: block;
 }
 
 #close_mailer{
@@ -854,6 +885,10 @@ footer nav li a:active{
 
 @media screen and (min-width: 420px){
 	
+	.contact_section{
+		margin-right: 20px;
+	}
+
 	.wrapper{
 		padding: 20px 40px;
 	}
@@ -873,8 +908,10 @@ footer nav li a:active{
 	}
 
 	#donate_submit{
-		max-width: 80%;
-		margin: 0 10%;
+		width: 80%;
+	    text-align: center;
+	    margin: 0 auto;
+	    max-width: 400px;
 	}
 
 }
@@ -885,13 +922,17 @@ footer nav li a:active{
 		padding: 20px 100px;
 	}
 
-	.toprunner{
-		text-align: right;
+	/*.toprunner{
+		padding: 0;
+	}*/
+
+	.toprunner a{
+		vertical-align: center;
 	}
 
-	#search_box{
-		width: 255px;
-		padding: 0;
+	#search_box {
+	    width: 250px;
+	/*    padding: 5px;*/
 	}
 
 	#header{
@@ -916,7 +957,7 @@ footer nav li a:active{
 	}
 
 	.wrapper{
-		padding: 20px;
+		padding: 35px 20px;
 	}
 
 	.box1{
@@ -939,7 +980,7 @@ footer nav li a:active{
 	    width: 31%;
 	    position: absolute;
 	    margin-top: 0;
-	    top: 233px;
+	    top: 238px;
 	    right: 20px;
 	}
 
@@ -959,13 +1000,13 @@ footer nav li a:active{
 	}
 
 	.sidebar{
-		padding-top: 75px;
+		padding-top: 82px;
 		float: right;
 		width: 33%;
 	}
 
 	.self_help{
-		margin-top: 20px;
+		margin-top: 0;
 		padding-top: 20px;
 	}
 
@@ -1068,12 +1109,39 @@ footer nav li a:active{
 
 	.donate{
 	    width: 19.5%;
+	    top: 178px;
 	}
 
 	.box2{
 		margin-bottom: 30px;
 	}
+	
+	.desktop_map{
+		display: block;
+	    float: left;
+	    width: 44%;
+	    padding: 3%;
+	    background-color: #fff;
+	}
 
+	.desktop_map h1{
+		margin-top: 0;
+	}
+	
+
+	.desktop_map img{
+		width: 100%;
+	}
+	
+	.map_content{
+		background-color: #fff;
+	}
+	
+	.program_locator{
+		width: 50%;
+		float: right;
+		margin-top: 50px;
+	}
 }
 
 
