@@ -51,7 +51,11 @@ var closeDown = function closeDown( e ){
 	e.preventDefault();
 }
 
-openMailer.addEventListener( "click", openUp );
+if (openMailer != null){
+	openMailer.addEventListener( "click", openUp );
+}
+
+
 closeMailer.addEventListener( "click", closeDown );
 
 
