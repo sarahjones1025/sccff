@@ -52,11 +52,17 @@ var closeDown = function closeDown( e ){
 }
 
 if (openMailer != null){
+
 	openMailer.addEventListener( "click", openUp );
+	
+}
+ if (closeMailer != null){
+
+ 	closeMailer.addEventListener( "click", closeDown );
+
 }
 
 
-closeMailer.addEventListener( "click", closeDown );
 
 
 // ^ I am attempting to add the class "show" to this section. 
