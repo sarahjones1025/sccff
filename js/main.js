@@ -6,9 +6,9 @@ trigger.on( "click", function( e ){
     var selector = $( this ).data( "content" );
 
     content.hide();
+    
     $( selector ).fadeIn( 500 );
 
-    // console.log( $( selector ).height() );
     if ( $( window ).height() < 600 ) {
 		$( document.body ).scrollTop( $( selector ).offset().top - 130 );
     }
