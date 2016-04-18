@@ -1,0 +1,629 @@
+@import "index";
+@import "programs";
+@import "about";
+@import "donate";
+@import "normalize";
+
+
+
+
+/*************SHELL*************/
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #444;
+	background-image: url(../img/bg.jpg);
+}	
+
+
+.clear{
+	clear: both;
+}
+
+.toprunner{
+	background-color: #444;
+	padding: 5px;
+
+	a{
+		float: left;
+		color: #ccc;
+		text-decoration: none;
+		padding-right: 5px;
+		margin-top: 5px;
+
+		&:nth-child(2){
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		&:nth-child(3){
+			font-size: .8em;
+		    border-left: solid 2px #ccc;
+		    padding: 5px 5px 5px 10px;
+		    margin-left: 5px;
+		}
+	}
+
+	img{
+		height: 15px;
+		padding: 5px;
+	}
+}
+
+#search_box {
+    width: 54%;
+    float: right;
+    margin-top: 2px;
+
+    input{
+		margin: 0;
+	}
+
+	input.gsc-search-button-v2{
+		padding: 0;
+	}
+
+	.gsc-control-cse{
+		padding: 0;
+	}
+
+	#___gcse_0{
+		height: 28px;
+	}
+}
+
+.contact_section{
+	float: right;
+}
+
+/*************HEADER*************/
+
+#header{
+	background-color: #fff;
+	position: relative;
+	
+	h1{
+	    font-size: 1em;
+	    font-family: Georgia, serif;
+	    color: #444;
+	    max-width: 175px;
+	    margin: 0;
+	    font-weight: normal;
+	    font-size: 1.2em;
+	}
+
+	ul{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	a{
+		display: inline-block;
+
+		&:nth-child(2){
+			margin-left: 15px;
+			text-decoration: none;
+			vertical-align: top;
+			font-weight: normal;
+			margin-top: 20px;
+		}
+	}
+}
+
+#logo{
+	height: 101px;
+}
+
+#header{
+	nav{
+		li{
+			list-style: none;
+			display: inline-block;
+			font-weight: bold;
+		}
+
+		a{
+			text-decoration: none;
+			color: #444;
+			padding: 10px 15px;
+			text-transform: uppercase;
+			&:active{
+				color: #00d9c3;
+			}
+			&:hover{
+				color: #ff8870;
+			}
+		}
+	}
+} 
+
+nav ul{
+	margin-bottom: 0;
+}
+
+/*************SIDEBAR*************/
+
+.donate{
+	position: relative;
+	margin-top: 15px;
+
+		a{
+			width: 100%;
+			
+			button{
+				background-color: #ffd06b;
+				color: white;
+				text-transform: uppercase;
+				padding: 25px;
+				border: none;
+				border-radius: 5px;
+				font-size: 1.1em;
+				font-weight: normal;
+				width: 100%;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+		}
+}
+ 
+#flair1{
+	position: absolute;
+	top: -18px;
+	left: -18px;
+	height: 45px;
+	width: 45px;
+}
+
+#flair2 {
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    height: 45px;
+}
+
+.newsletter{
+	position: relative;
+	height: 135px;
+
+	button {
+	    background-color: #fff;
+	    color: #444;
+	    text-transform: uppercase;
+	    padding: 10px 17px;
+	    width: 100%;
+	    border: none;
+	    border-radius: 5px;
+	    font-size: 1em;
+	    margin-top: 30px;
+	    line-height: 2;
+	    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+}
+
+.by_the_numbers{
+	margin-top: 30px;
+}
+
+.btn{
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+	padding: 15px 0 0 0;
+	margin-bottom: 0;
+
+	h2{
+		font-size: 1em;
+		font-weight: normal;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 0;
+		padding-bottom: 15px;
+	}
+}
+
+.facts{
+	background-color: #ff8870;
+	border-radius: 0 0 5px 5px;
+	padding: 15px 30px;
+	margin-top: 0;
+	color: #fff;
+	
+	p{
+		font-weight: light;
+		line-height: 1.5;
+		text-align: center;
+	}
+}
+
+.self_help{
+	margin-top: 30px;
+
+	button{
+		background-color: #ccc;
+		color: #fff;
+		width: 100%;
+		display: inline-block;
+		border: none;
+		border-radius: 5px;
+		padding: 15px;
+		font-size: 1em;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		
+		&:first-child{
+			margin-right: 5%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+/*************WRAPPER*************/
+
+.wrapper{
+	padding: 20px;
+}
+
+/*************FOOTER*************/
+
+footer{
+	background-color: #fff;
+	font-size: .8em;
+	line-height: 2;
+	padding: 20px;
+	position: relative;
+	
+	ul{
+		padding-left: 0;
+		
+		&:nth-child(3){
+			display: none;
+		}
+	}
+
+	a{
+		text-decoration: none;
+		padding: 0 5px;
+	}
+
+	p{
+		font-family: Georgia, serif;
+	}
+
+	img{
+		height: 15px;
+	}
+
+	nav{
+		text-align: center;
+
+		li{
+			display: inline-block;
+			&:first-child a{
+				border: none;
+			}
+			
+		}
+
+		a{
+			color: #444;
+			border-left: solid 1px #808080;
+
+			&:active{
+				color: #00d9c3;
+			}
+
+			&:hover{
+				color: #ff8870;
+			}
+		}
+	}
+}
+
+.social_media{
+	text-align: right;
+	font-family: "Trebuchet", Helvetica, sans-serif;
+
+	p{
+		display: none;
+	}
+
+	a{
+		padding: 5px 11px;
+		margin-left: 5px;
+		font-size: 1.1em;
+		font-weight: bold;
+		color: #808080;
+	}
+}
+
+#header nav .current a{
+	color: #00d9c3;
+}
+
+/*************MEDIA QUERIES*************/
+
+@media screen and (min-width: 420px){
+	
+	.contact_section{
+		margin-right: 20px;
+	}
+
+	.wrapper{
+		padding: 20px 40px;
+	}
+
+	footer nav{
+		text-align: left;
+	}
+
+	.social_media p{
+		display: inline-block;
+		font-family: "Trebuchet", Helvetica, sans-serif;
+	}
+
+	.flair2{
+		bottom: 75px;
+    	left: -28px;
+	}
+
+	#donate_submit{
+		width: 80%;
+	    text-align: center;
+	    margin: 0 auto;
+	    max-width: 400px;
+	    display: block;
+	    margin-bottom: 20px;
+
+	}
+
+}
+
+@media screen and (min-width: 500px){
+
+	.wrapper{
+		padding: 20px 100px;
+	}
+
+	.toprunner a{
+		vertical-align: center;
+	}
+
+	#search_box {
+	    width: 250px;
+	}
+
+	#header{
+		border: none;
+	}
+
+}
+
+@media screen and (min-width: 610px){
+		
+	#wrapper2{
+		padding-bottom: 0;
+	}
+
+	form{
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	.about_us h1 {
+	    margin-top: 0;
+	}
+
+	.wrapper{
+		padding: 35px 20px;
+	}
+
+	.box1{
+		margin: 0;
+	}
+
+	.by_the_numbers{
+		margin-top: 0;
+	}
+
+	#flair1{
+		position: absolute;
+		top: -18px;
+		left: -18px;
+		height: 45px;
+		width: 45px;
+	}
+
+	.donate{
+	    width: 31%;
+	    position: absolute;
+	    margin-top: 0;
+	    top: 238px;
+	    right: 20px;
+	}
+
+	.newsletter button{
+		width: 100%;
+	}
+
+	.self_help 
+
+	.main_content{
+		float: left;
+		width: 60%;
+	}
+
+	.sidebar{
+		padding-top: 82px;
+		float: right;
+		width: 33%;
+	}
+
+	.self_help{
+		margin-top: 0;
+		padding-top: 20px;
+
+		button{
+			float: unset;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	.aside{
+	    margin-top: 30px;
+	    padding: 3% 5% 3% 5%;
+	    box-sizing: border-box;
+	    margin-left: 15px;
+	    max-width: 750px;
+	}
+
+	.program_locator{
+		margin-top: 0;
+	}
+
+}
+
+@media screen and (min-width: 673px){
+
+	.self_help{
+		padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 800px){
+
+
+	#header nav ul{
+		text-align: right;
+	}
+
+	.main_content{
+		width: 68%;
+	}
+
+	.sidebar{
+		width: 30%;
+	}
+
+	.save_me, .box2, .box4, .box5, .box6{
+		display: inline-block;
+		width: 45%;
+		margin: 0 2%;
+		vertical-align: top;
+	}
+
+	.box2{
+		margin-bottom: 30px;
+	}
+
+	.box3{
+		margin-top: 0;
+	}
+
+	.box4{
+		margin-bottom: 30px;
+	}
+
+	.donate{
+	    width: 28.5%;
+	}
+
+	.main_content {
+    	width: 65%;
+	}
+
+	footer nav{
+		position: absolute;
+		top: 60px;
+		left: 380px;
+	}
+
+	.social_media{
+		position: absolute;
+		top: 60px;
+		right: 20px;
+	}
+}
+
+@media screen and (min-width: 1080px){
+
+	#header{
+		height: 101px;
+
+		nav{
+			position: absolute;
+			top: 40px;
+			right: 5px;
+		}
+	}
+
+	.sidebar{
+		width: 20%;
+	}
+
+	.main_content{
+		width: 76%;
+	}
+
+	.save_me, .box2, .box4, .box5, .box6{
+		width: 28%;
+		margin: 0 2%;
+	}
+
+	.donate{
+	    width: 19.5%;
+	    top: 178px;
+	}
+
+	.box2{
+		margin-bottom: 30px;
+	}
+	
+	.desktop_map{
+		display: block;
+	    float: left;
+	    width: 44%;
+	    background-color: #fff;
+
+	    h1{
+			margin-top: 0;
+			padding: 5%;
+			font-size: 1.6em;
+		    border-bottom: solid 2px #ccc;
+		    padding: 10%;
+		    font-weight: normal;
+		    width: 207.5%;
+		}
+
+		img{
+			width: 100%;
+			padding: 5% 10%;
+		}
+	}
+
+	
+	.map_content{
+		background-color: #fff;
+	}
+	
+	.program_locator{
+		width: 40%;
+	    float: right;
+	    margin-top: 13%;
+	    padding-right: 5%;
+	}
+
+	.about_us p {
+	    line-height: 2;
+	    font-size: 1.1em;
+
+	    &:nth-child(3) {
+	    	line-height: 0;
+		}
+	}
+
+
+	.aside p{
+		font-size: 1.1em;
+		line-height: 2;
+	}
+
+
+}
