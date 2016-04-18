@@ -665,10 +665,11 @@ iframe{
 
 #donate_form{
 	background-color: #fff;
-	padding: 10px;
+	/*padding: 10px;*/
 	border-radius: 5px;
 	max-width: 750px;
 }
+
 
 select{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -677,10 +678,11 @@ select{
 }
 
 form h1{
-	font-size: 1.5em;
-	font-weight: normal;
-	text-align: center;
-	padding: 0 60px;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    padding: 5%;
+    border-bottom: solid 1px #ccc;
 }
 
 form h2{
@@ -691,7 +693,7 @@ form h2{
 
 fieldset{
 	border: none;
-	border-top: solid 1px rgba( 0, 0, 0, .2 );
+	padding: 0 	5%;
 }
 
 label[for="text"]{
@@ -722,7 +724,7 @@ input{
 #title{
     -webkit-appearance: none;
     background-color: #fff;
-    width: 100%;
+    width: 101%;
     border-radius: 0;
     height: 55px;
     border: solid 1px #ccc;
@@ -764,6 +766,11 @@ input[type="checkbox"]{
 	height: 20px;
 	width: 20px;
 	border: solid 1px #ccc;
+	margin-top: 0;
+}
+
+input[type="radio"]{
+	margin-top: 0;
 }
 
 label[for="checkbox"]{
@@ -772,10 +779,14 @@ label[for="checkbox"]{
 }
 
 #comment_box{
-	margin-top: 10px;
-	margin-bottom: 20px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-
+	display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* text-indent: 15px; */
+    padding: 3%;
 }
 
 #marketing_source{
@@ -1048,6 +1059,8 @@ footer nav li a:active{
 	    margin-top: 30px;
 	    padding: 3% 5% 3% 5%;
 	    box-sizing: border-box;
+	    margin-left: 15px;
+	    max-width: 750px;
 	}
 
 	.program_locator{
