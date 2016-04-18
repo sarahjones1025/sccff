@@ -1,0 +1,181 @@
+/*************Donate*************/
+
+#donate_form{
+	background-color: #fff;
+	border-radius: 5px;
+	max-width: 750px;
+}
+
+form{
+	h1{
+	    font-size: 1.5em;
+	    font-weight: normal;
+	    text-align: center;
+	    padding: 5%;
+	    border-bottom: solid 1px #ccc;
+	}
+
+	h2{
+		font-size: 1em;
+		text-transform: uppercase;
+		margin: 20px 0;
+	}
+} 
+
+fieldset{
+	border: none;
+	padding: 0 	5%;
+}
+
+label[for="text"]{
+	margin-bottom: 10px;
+}
+
+select{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-top: 10px;
+	width: 101%;	
+}
+
+input{
+	height: 45px;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-indent: 15px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#designation{
+	-webkit-appearance: none;
+	background-color: #fff;
+	width: 100%;
+	border-radius: 0;
+	height: 55px;
+	border: solid 1px #ccc;
+	color: #bbb;
+	margin-bottom: 20px;
+	text-indent: 15px;
+}
+
+#title{
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 101%;
+    border-radius: 0;
+    height: 55px;
+    border: solid 1px #ccc;
+    color: #bbb;
+    margin-bottom: 20px;
+    text-indent: 15px;
+}
+
+#one_time_gift, #pledge_gift, #honor, #memory{
+	width: 20px;
+	height: 20px;
+}
+
+label{
+	margin-bottom: 10px;
+}
+
+label[for="one_time_gift"]{
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+label[for="pledge_gift"]{
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+label[for="honor"]{
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+label[for="memory"]{
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+input[type="checkbox"]{
+	height: 20px;
+	width: 20px;
+	border: solid 1px #ccc;
+	margin-top: 0;
+}
+
+input[type="radio"]{
+	margin-top: 0;
+}
+
+label[for="checkbox"]{
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+#comment_box{
+	display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 3%;
+}
+
+#marketing_source{
+	-webkit-appearance: none;
+	background-color: #fff;
+	width: 101%;
+	border-radius: 0;
+	height: 45px;
+	border: solid 1px #ccc;
+	color: #bbb;
+	margin-bottom: 20px;
+	text-indent: 15px;
+}
+
+#donate_submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #00d9c3;
+    color: #fff;
+    font-size: 1.2em;
+    width: 100%;
+    height: 50px;
+    font-family: "Trebuchet", Helvetica, sans-serif;
+}
+
+.mailer{
+	display: none;
+	background-color: #ccc;
+	padding: 20px;
+}
+
+#mailer_submit{
+	-webkit-appearance: none;
+    width: 200px;
+    height: 40px;
+    margin-left: 22px;
+    background-color: #00d9c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.show{
+	display: block;
+}
+
+#close_mailer{
+	margin-left: 85%;
+	color: #444;
+}
+
+.aside .bold{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: .9em;
+}

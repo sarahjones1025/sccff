@@ -1,0 +1,64 @@
+
+/*************About Us*************/
+.about_us{
+	background-color: #fff;
+	padding: 0;
+	border-radius: 5px 5px 0 0;
+
+	h1 {
+	    font-size: 1.6em;
+	    border-bottom: solid 2px #ccc;
+	    padding: 5%;
+	    font-weight: normal;
+	}
+
+	p{
+		margin: 0;
+		padding: 2% 5%;
+		line-height: 1.5;
+		font-family: Georgia, serif;
+		
+		&:nth-child(3){
+			font-weight: bold;
+		}
+	}
+
+	a{
+		color: #ff8870;
+		
+		&:hover{
+			color: #ffd06b;
+		}
+		
+		&:active{
+			color: #00d9c3;
+		}
+	}
+}
+
+.charity_info{
+	background-color: #ff8870;
+	margin-top: 0;
+	border-radius: 0 0 5px 5px;
+
+	ul{
+		margin: 0;
+		padding: 20px 5%;
+	}
+
+	li{
+		margin-bottom: 10px;
+	}
+
+	a{
+		color: #fff;
+
+		&:hover{
+			color: #444;
+		}
+
+		&:active{
+			color: #00d9c3;
+		}
+	}
+}
