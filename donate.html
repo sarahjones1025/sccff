@@ -93,17 +93,18 @@
 					<input type="radio" name="radio" id="pledge_gift" value="r2">
 					<label for="pledge_gift">Pledge (installments)</label>
 				</div>
+				<p>Special Circumstances:</p>
 				<div>
 					<input type="checkbox" name="corporate_donation" value="corporate_donation">
-					<label for="checkbox">Check if Corporate donation</label>
+					<label for="checkbox">Check if this is a Corporate donation</label>
 				</div>
 				<div>
 					<input type="checkbox" name="anonymouse_donation" value="anonymous_donation">
-					<label for="checkbox">Check if Anonymous</label>
+					<label for="checkbox">Check if this is an Anonymous donation</label>
 				</div>
 				<div>
 					<label for="text">Comments:</label>
-					<textarea name="text" id="comment_box" cols="34" rows="5"></textarea>
+					<textarea name="text" id="comment_box" cols="34" rows="5" placeholder="Anything you would like to add?"></textarea>
 				</div>
 				<div>			
 					<label for="marketing_source">What brought you here to give today?</label>
@@ -187,8 +188,9 @@
 				<input type="text" name="expiration" id="expiration" value> 
 				<label for="code">Security Code:</label>
 				<input type="text" name="code" id="code" value>  
+				<input type="submit" value="- Submit Donation -" id="donate_submit">
 			</fieldset>
-			<input type="submit" value="- Submit Donation -" id="donate_submit">
+			
 		</form>	
 		<div class="aside">
 			<p>Or ...</p> 
