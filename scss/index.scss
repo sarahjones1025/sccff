@@ -178,7 +178,7 @@ iframe{
 		margin: 0;
 		padding: 0 55px 0 20px;
 		
-		&:nth-child(3){
+		&:nth-child(2){
 			font-weight: bold;
 			margin-top: 20px;
 		}
@@ -186,6 +186,10 @@ iframe{
 		&:nth-child(5){
 			font-weight: bold;
 			margin-top: 20px;
+		}
+
+		&:nth-child(3){
+			font-family: Georgia, serif;
 		}
 
 		&:nth-child(6){
