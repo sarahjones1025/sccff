@@ -10,13 +10,14 @@
 		padding: 20px;
 		font-size: 1.3em;
 		font-weight: normal;
+		border-bottom: solid 1px #ccc;
 	}
 
 	ul{
 		padding-left: 0;
 		margin: 25px 0;
 		padding: 25px 0;
-		border-top: solid 1px rgba( 0, 0, 0, .2 );
+		// border-top: solid 1px rgba( 0, 0, 0, .2 );
 	}
 
 	li{
@@ -46,7 +47,8 @@
 }
 
 .inner_list{
-	background-color: #ccc;
+	background-color: #00d9c3;
+	color: #fff;
 	
 	li{
 		padding: 0 20px;
@@ -55,6 +57,10 @@
 		&:nth-child(3){
 			margin-top: 20px;
 		}
+	}
+
+	a{
+		color: #fff;
 	}
 }
 
