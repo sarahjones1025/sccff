@@ -922,6 +922,9 @@ body {
   #search_box #___gcse_0 {
     height: 28px; }
 
+.gsc-wrapper {
+  z-index: 100; }
+
 .contact_section {
   float: right; }
 
