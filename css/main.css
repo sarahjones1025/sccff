@@ -656,15 +656,15 @@ iframe {
   padding: 0; }
 
 .inner_list {
-  background-color: #00d9c3;
-  color: #fff; }
+  background-color: #ccc;
+  color: #444; }
   .inner_list li {
     padding: 0 20px;
     border: none; }
     .inner_list li:nth-child(3) {
       margin-top: 20px; }
   .inner_list a {
-    color: #fff; }
+    color: #444; }
 
 .bold {
   font-weight: bold;

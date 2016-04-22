@@ -3,11 +3,13 @@ var trigger = $( ".trigger" );
 
 trigger.on( "click", function( e ){
 
-    var selector = $( this ).data( "content" );
+	console.log("hello");
 
-    content.hide();
+    var selector = $( this ).data( "content" );
     
-    $( selector ).fadeIn( 500 );
+	content.not(selector).hide();
+
+    $( selector ).fadeToggle( 500 );
 
     if ( $( window ).height() < 600 ) {
 		$( document.body ).scrollTop( $( selector ).offset().top - 130 );
@@ -28,9 +30,10 @@ content.hide();
 
 $( ".trigger_2" ).trigger( "click" );
 
-// ^ How do I make it so that the screen always displays the active list item? Currently I have to scroll
-// to view the contents of each section.
 
+
+
+// Send a Mailer option on donate.html //
 
 var mailer 		= document.querySelector( ".mailer" );
 var openMailer 	= document.getElementById( "open_mailer" );
@@ -61,13 +64,6 @@ if (openMailer != null){
  	closeMailer.addEventListener( "click", closeDown );
 
 }
-
-
-
-
-// ^ I am attempting to add the class "show" to this section. 
-//How do I set my checkbox to immediate mode so my click listener will work?
-
 
 
 
